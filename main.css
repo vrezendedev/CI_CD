@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "FlowersKingdom";
+    src: url("../resources/FlowersKingdom.ttf");
+}
+
+@layer components{
+
+    .main{
+        background-blend-mode: overlay;
+        @apply bg-default-background bg-zinc-400 overflow-x-hidden
+    }
+
+    .audio{
+        @apply m-0 p-0 w-0 h-0
+    }
+
+    .logo{
+        @apply flex h-28 justify-center 
+    }
+
+    .hero{
+        @apply max-w-xs max-h-56 p-1
+    }
+
+    .subtitle{
+        @apply font-scooby text-amber-800 p-2 leading-9
+    }
+
+    .columnP{
+        @apply m-0 p-0 ml-1 mr-1 text-center border-2 border-yellow-800 border-dashed bg-texture-background
+    }
+    .columnT{
+        @apply m-0 mr-1 ml-1 mt-2 p-0 pl-1 pr-1  font-scooby text-xs text-amber-800 leading-9 text-justify
+    }
+
+    .fScooby{
+        @apply ml-7 pb-3 text-xs
+    }
+
+    .highlight{
+        @apply font-scooby text-lg text-amber-900 p-0 pt-1 m-0 mr-1 leading-9
+    }
+    
+    .mysteryImg{
+        @apply max-h-16 m-0 p-0 mt-5
+    }
+}
